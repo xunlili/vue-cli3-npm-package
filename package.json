@@ -1,15 +1,20 @@
 {
   "name": "vue-cli3-npm-package",
-  "version": "0.1.0",
-  "private": true,
+  "version": "0.1.5",
+  "private": false,
+  "main": "lib/vue-cli3-npm-package.umd.min.js",
   "scripts": {
-    "serve": "vue-cli-service serve",
+    "dev": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "lib": "vue-cli-service build --target lib --name vue-cli3-npm-package --dest lib src/index.js"
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "node-sass": "^4.14.1",
+    "sass-loader": "^8.0.0",
     "vue": "^2.6.11",
+    "vue-cli-configjs": "^2.0.0",
     "vuex": "^3.4.0"
   },
   "devDependencies": {
